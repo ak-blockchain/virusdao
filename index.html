@@ -1,0 +1,126 @@
+<head>
+    <title>The Virus Dao</title>
+    <link rel="stylesheet" href="styles.css"></link>
+</head>
+
+<body>
+
+    <img id="viruspic" src="orange.png">
+
+    <button class="chainSquare chainSelected" id="chainBsc">
+        <img class="chainPic" src="bsc_white.png">
+    </button>
+
+    <button class="chainSquare" id="chainEth">
+        <img class="chainPic" src="eth_white.png">
+    </button>
+
+    <button class="chainSquare" id="chainAvax">
+        <img class="chainPic" src="avax_white.png">
+    </button>
+
+    <button class="chainSquare" id="chainFtm">
+        <img class="chainPic" src="ftm_white.png">
+    </button>
+
+    <button id="walletCircle">
+        <img id="walletImage" src="orangeWallet.png">
+    </button>
+    <div id="usersWallet">Not Connected</div>
+
+    <div id="menuDiv" style="display: block">
+
+        <button class="menuButton" style="background-color:#D94E28;">
+            <img src="home.png" class="menuImage">
+            <h3 class="menuText">Home (BSC)</h3>
+        </button>
+
+        <button id="btn_docs" class="menuButton menuButton_clickable">
+            <img src="white.png" class="menuImage">
+            <h3 class="menuText">Docs</h3>
+        </button>
+
+        <button class="menuButton menuButton_unselected">
+            <img src="pig.png" class="menuImage">
+            <h3 class="menuText">Stake (Coming Soon)</h3>
+        </button>
+        
+        <button class="menuButton menuButton_unselected">
+            <img src="vote.png" class="menuImage">
+            <h3 class="menuText">Vote (Coming Soon)</h3>
+        </button>
+
+        
+    </div>
+
+    <div id="statsDiv">
+
+        <div class="statsBlock" id="block_balance">
+            <div class="statsSquare" id="square_balance">
+                <img src="balance.png" class="statsImage">
+            </div>
+            <h4 class="statsLabel orange">Total balance</h4>
+            <h2 class="stat" id="stat_balance">4041100</h2>
+        </div>
+
+        <div class="statsBlock" id="block_referrer">
+            <div class="statsSquare" id="square_referrer">
+                <img src="referrer.png" class="statsImage">
+            </div>
+            <h4 class="statsLabel gray">Your referrer</h4>
+            <a class="stat" id="stat_referrer" href="ftm.png" target="_blank" rel="noopener noreferrer">0xeb1...9Ea</a>
+        </div>
+
+        <div class="statsBlock" id="block_reward">
+            <div class="statsSquare" id="square_reward">
+                <img src="rewards.png" class="statsImage">
+            </div>
+            <h4 class="statsLabel yellow">Referral rewards</h4>
+            <h2 class="stat" id="stat_reward">4041100</h2>
+        </div>
+
+        <div class="statsBlock" id="block_referred">
+            <div class="statsSquare" id="square_referred">
+                <img src="referrals.png" class="statsImage">
+            </div>
+            <h4 class="statsLabel yellow">Total referred</h4>
+            <h2 class="stat" id="stat_reffered">7</h2>
+        </div>
+
+    </div>
+
+    <table id="referralsTable">
+        
+        <tr class="labelRow">
+            <td class="walletLabel"> Wallet Referred</td>
+            <td class="statLabel"> Bought</td>
+            <td class="statLabel orange"> Reward</td>
+            <td class="txLabel"></td>
+        </tr>
+        <!--
+        <tr class="tableRow">
+            <td> 
+                <a href="ftm.png" class="walletAddress" target="_blank" rel="noopener noreferrer">
+                    0xeb12...3Sq
+                </a>
+            </td>
+            <td class="statText"> 4821100</td>
+            <td class="statText orange"> 241055</td>
+        </tr>
+
+        <tr class="tableRow">
+            <td> 
+                <a href="ftm.png" class="walletAddress" target="_blank" rel="noopener noreferrer">
+                    0xeb12...3Sq
+                </a>
+            </td>
+            <td class="statText"> 4821100</td>
+            <td class="statText orange"> 241055</td>
+        </tr>
+        -->
+    </table>
+    
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+    <script src="dapp.js"></script>
+</body>
