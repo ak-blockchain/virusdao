@@ -68,7 +68,7 @@
                 <img src="referrer.png" class="statsImage">
             </div>
             <h4 class="statsLabel gray">Your referrer</h4>
-            <a class="stat" id="stat_referrer" href="ftm.png" target="_blank" rel="noopener noreferrer">Not Referred</a>
+            <a class="stat" id="stat_referrer" href="https://bscscan.com" target="_blank" rel="noopener noreferrer">Not Referred</a>
         </div>
 
         <div class="statsBlock" id="block_reward">
@@ -86,13 +86,12 @@
             <h4 class="statsLabel yellow">Total referred</h4>
             <h2 class="stat" id="stat_reffered">0</h2>
         </div>
-
     </div>
 
     <div id="referBarBlock">
         <input type="text" id="referBar" placeholder="0xAddress" class="inputButton">
         <button id="btn-refer">Refer Address</button>
-        <h6 id="refer1" error-message">Error: Wallet not connected</h6>
+        <h6 id="refer1"></h6>
     </div>
 
     <div id="pairAddressBlock">
@@ -101,17 +100,19 @@
                 0xeb1...14F7
             </a>
         </h6> 
-        <div class="copySquare"  id="copyVirus">
-            <img src="copy.png" class="copyImage">
-        </div>
+        <button class="copySquare"  id="copyVirus">
+            <img src="copy.png" class="copyImage" id="virusClipboard">
+            <img src="tick_orange.png" class="copyImageTick" id="virusTick">
+        </button>
         <h6 class="pairAddress">Pair:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             <a id="pair" class="pairHref" href="https://bscscan.com" target="_blank" rel="noopener noreferrer">
                 0xDeE...3Ac4
             </a>
         </h6>
-        <div class="copySquare"  id="copyPair">
-            <img src="copy.png" class="copyImage">
-        </div>
+        <button class="copySquare"  id="copyPair">
+            <img src="copy.png" class="copyImage" id="pairClipboard">
+            <img src="tick_orange.png" class="copyImageTick" id="pairTick">
+        </button>
         
     </div>
 
@@ -145,6 +146,29 @@
         </tr>
         -->
     </table>
+
+    <div id="cryptologosbar">
+        <a href="https://t.me/virusdaoen" target="_blank" rel="noopener noreferrer" style="color: transparent">
+        <img class="cryptologo" src="cryptologos/bscscan.png">
+        </a>
+
+        <a href="https://t.me/virusdaoen" target="_blank" rel="noopener noreferrer" style="color: transparent">
+            <img class="cryptologo" src="cryptologos/telegram.png">
+        </a>
+
+        <a href="https://t.me/virusdaoen" target="_blank" rel="noopener noreferrer" style="color: transparent">
+        <img class="cryptologo" src="cryptologos/twitter.png">
+        </a>
+
+        <a href="https://coinmarketcap.com" target="_blank" rel="noopener noreferrer" style="color: transparent">
+        <img class="cryptologo tbc" src="cryptologos/cmc.png">
+        </a>
+
+        <a href="https://coingecko.com" target="_blank" rel="noopener noreferrer" style="color: transparent">
+        <img class="cryptologo tbc" src="cryptologos/coingecko.png">
+        </a>
+
+    </div>
     
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
     <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
