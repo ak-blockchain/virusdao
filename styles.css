@@ -564,7 +564,7 @@ body {
 
 #stakeButton:hover {
     background-color: var(--orange);
-    cursor: not-allowed;; /*pointer; */
+    cursor:pointer;
     color: white;
 }
 
@@ -574,7 +574,7 @@ body {
 }
 #unstakeButton:hover {
     background-color: var(--yellow);
-    cursor: not-allowed; /*pointer; */
+    cursor: pointer;
     color: var(--pageBg);
 }
 
@@ -588,7 +588,7 @@ body {
 }
 #stakeRewardsButton:hover {
     background-color: var(--yellow);
-    cursor: not-allowed;  /*pointer*/
+    cursor: pointer;
     color: var(--pageBg);
 }
 
