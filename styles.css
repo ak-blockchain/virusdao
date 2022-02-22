@@ -25,6 +25,12 @@ body {
 .gray {
     color: #878787;
 }
+.othergray {
+    background-color: #424242;
+}
+.transOrangeBg {
+    background-color: var(--transOrange);
+}
 
 
 /*
@@ -152,7 +158,6 @@ body {
 }
 .menuButton_unselected {
     opacity: 0.4;
-
 }
 .menuButton_unselected:hover {
     cursor: not-allowed;
@@ -475,3 +480,179 @@ body {
     cursor: not-allowed;
 }
 
+/* Staking */
+
+#staking {
+    position: absolute;
+    left: -90;
+}
+
+.stakeBlock {
+    width: 300px;
+    height: 300px;
+    background-color: #2B2B2B;
+    border-radius: 50px;
+}
+
+#stakeVirusBlock {
+    position: absolute;
+    left: 500px;
+    top: 200px;
+}
+
+#unstakeVirusBlock {
+    position: absolute;
+    left: 875px;
+    top: 200px;
+}
+
+#stakeRewardsBlock {
+    position: absolute; 
+    left: 500px;
+    top: 565px;
+    height: 140px;
+    width: 685px;
+
+}
+
+#stakeVirusSquare {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    background-color: var(--transOrange);
+}
+
+#unstakeVirusSquare {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    background-color: var(--reward);
+}
+
+.stakeHeading {
+    position: absolute;
+    top: 18px;
+    left: 112px;
+    font-weight: 400;
+    font-size:1.2em;
+}
+.stakeNumber {
+    position: absolute;
+    top: 42px;
+    left: 112px;
+    color: white;
+    font-size: 1.7em;
+    font-weight: 400;
+}
+
+.stakeRectangle {
+    position: absolute;
+    left: 30px;
+    width: 80%;
+    height: 39px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 600;
+    font-size:1.4em;
+    padding-top: 11px;
+    color: var(--orange);
+}
+
+#stakeButton {
+    color: var(--orange); 
+}
+
+#stakeButton:hover {
+    background-color: var(--orange);
+    cursor: not-allowed;; /*pointer; */
+    color: white;
+}
+
+#unstakeButton {
+    color: var(--yellow);
+    background-color: var(--reward);
+}
+#unstakeButton:hover {
+    background-color: var(--yellow);
+    cursor: not-allowed; /*pointer; */
+    color: var(--pageBg);
+}
+
+#stakeRewardsButton {
+    position: absolute;
+    top: 43px;
+    left: 290px;
+    width: 365px;
+    background-color: var(--reward);
+    color: var(--yellow); 
+}
+#stakeRewardsButton:hover {
+    background-color: var(--yellow);
+    cursor: not-allowed;  /*pointer*/
+    color: var(--pageBg);
+}
+
+#rewardHeading {
+    position: absolute; 
+}
+
+#unstakeInputID {
+    color: var(--yellow);
+}
+
+.stakeInput {
+    position: absolute;
+    left: 30px;
+    width: 80%;
+    height: 50px;
+    border-radius: 15px;
+    border: 0px solid var(--orange);
+    padding-left: 10px;
+    color: var(--orange);
+    font-weight: 600;
+    font-size:1.2em;
+}
+
+#stakeDetailsBlock {
+    position: absolute;
+    left: 510px;
+    top: 50px;
+    width: 500px;
+}
+
+
+.stakeHeader {
+    color: white;
+    font-size: 1.4em;
+}
+
+.stakeHeaderNumber {
+    position: absolute;
+    font-size: 2.6em;
+    font-weight: 600;
+    color: var(--orange);
+}
+
+#maxStakeButton {
+    border: 0px;
+    background-color: transparent;
+    color: var(--orange);
+    font-size: 1.1em;
+    font-weight: 200;
+    position: absolute;
+    left: 210px;
+    top: 133px;
+    z-index: 5;
+}
+#maxStakeButton:hover {
+    font-weight: 600;
+    cursor: not-allowed; /*pointer; */
+}
+
+#unclaimedRewards {
+    
+}
+
+#unclaimedRewardsNumber {
+    
+}
