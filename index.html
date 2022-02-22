@@ -161,16 +161,16 @@
 
         <div id="stakeDetailsBlock">
             <h4 class="stakeHeader">
-                APY
+                APY (estimated)
             </h4>
             <h2 class="stakeHeaderNumber" style="top: 30px; left: 0px;">
-                0%
+                600%
             </h2>
 
             <h4 class="stakeHeader" style="position: absolute; left: 150px; top: 0px;">
                 Total $VIRUS Staked
             </h4>
-            <h2 class="stakeHeaderNumber"  style="left: 150px; top: 30px;">
+            <h2 id="totalvirusstaked" class="stakeHeaderNumber"  style="left: 150px; top: 30px;">
                 0 
             </h2>
         </div>
@@ -181,15 +181,14 @@
             <div class="statsSquare" id="stakeVirusSquare" style="width: 75px; height: 75px">
                 <img src="balance.png" class="statsImage" style="width: 40px;">
             </div>
-            <h4 class="stakeHeading orange">$VIRUS Balance</h4>
-            <h2 class="stakeNumber" id="stat_balance">0</h2>
+            <h4 class="stakeHeading orange" id="virusBalanace">$VIRUS Balance</h4>
+            <h2 class="stakeNumber" id="stake_balance">0</h2>
             <input class="stakeInput othergray" id="stakeInputID" placeholder="0" style="top: 120px;">
             <button id="maxStakeButton"> MAX </button>    
         </input>
             <div class="stakeRectangle transOrangeBg" id="stakeButton" style="top: 180px;">
                 Stake
             </div>
-
         </div>
 
         <div class="stakeBlock" id="unstakeVirusBlock">
@@ -197,14 +196,14 @@
                 <img src="yellow_pig.png" class="statsImage" style="width: 40px;">
             </div>
             <h4 class="stakeHeading yellow">Staked $VIRUS</h4>
-            <h2 class="stakeNumber">0</h2>
+            <h2 class="stakeNumber"  id="stake_staked">0</h2>
             <input class="stakeInput othergray" id="unstakeInputID" placeholder="0" style="top: 120px;"></input>
             <div class="stakeRectangle transOrangeBg" id="unstakeButton" style="top: 180px;">
-                Stake
+                Unstake
             </div>
         </div>
         
-        <div class="stakeBlock" id="stakeRewardsBlock">
+        <div class="stakeBlock" id="stakeRewardsBlock" style="display: none">
             <div class="statsSquare" id="unstakeVirusSquare" style="width: 75px; height: 75px">
                 <img src="rewards.png" class="statsImage" style="width: 40px;">
             </div>
