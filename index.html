@@ -31,7 +31,7 @@
 
     <div id="menuDiv" style="display: block">
 
-        <button class="menuButton" style="background-color:#D94E28;">
+        <button id="btn_menu" class="menuButton menuButton_clickable">
             <img src="home.png" class="menuImage">
             <h3 class="menuText">Home (BSC)</h3>
         </button>
@@ -41,7 +41,7 @@
             <h3 class="menuText">Docs</h3>
         </button>
 
-        <button class="menuButton menuButton_unselected">
+        <button id="btn_stake" class="menuButton menuButton_clickable">
             <img src="pig.png" class="menuImage">
             <h3 class="menuText">Stake (Coming Soon)</h3>
         </button>
@@ -52,6 +52,53 @@
         </button>
 
     </div>
+
+    <div id="pairAddressBlock">
+        <h6 class="pairAddress">VIRUS:&nbsp&nbsp
+            <a id="pair" class="pairHref" href="https://bscscan.com/token/0x78618c5114Cf2B71A3fe0Af9d7c5aEb129E90487" target="_blank" rel="noopener noreferrer">
+                0x7861...0487
+            </a>
+        </h6> 
+        <button class="copySquare"  id="copyVirus">
+            <img src="copy.png" class="copyImage" id="virusClipboard">
+            <img src="tick_orange.png" class="copyImageTick" id="virusTick">
+        </button>
+        <h6 class="pairAddress">Pair:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a id="pair" class="pairHref" href="https://bscscan.com/address/0x30D85Bb8b68B3425F7f3433fc2b1596CA873da89" target="_blank" rel="noopener noreferrer">
+                0x30D...da89
+            </a>
+        </h6>
+        <button class="copySquare"  id="copyPair">
+            <img src="copy.png" class="copyImage" id="pairClipboard">
+            <img src="tick_orange.png" class="copyImageTick" id="pairTick">
+        </button>
+        
+    </div>
+
+    <div id="cryptologosbar">
+        <a href="https://bscscan.com/address/0x78618c5114Cf2B71A3fe0Af9d7c5aEb129E90487" target="_blank" rel="noopener noreferrer" style="color: transparent">
+        <img class="cryptologo" src="cryptologos/bscscan.png">
+        </a>
+
+        <a href="https://t.me/virusdaoen" target="_blank" rel="noopener noreferrer" style="color: transparent">
+            <img class="cryptologo" src="cryptologos/telegram.png">
+        </a>
+
+        <a href="https://twitter.com/virusdaoapp" target="_blank" rel="noopener noreferrer" style="color: transparent">
+        <img class="cryptologo" src="cryptologos/twitter.png">
+        </a>
+
+        <a href="https://coinmarketcap.com" target="_blank" rel="noopener noreferrer" style="color: transparent">
+        <img class="cryptologo tbc" src="cryptologos/cmc.png">
+        </a>
+
+        <a href="https://coingecko.com" target="_blank" rel="noopener noreferrer" style="color: transparent">
+        <img class="cryptologo tbc" src="cryptologos/coingecko.png">
+        </a>
+
+    </div>
+
+    <div id="homepage">
 
     <div id="statsDiv">
 
@@ -94,27 +141,7 @@
         <h6 id="refer1"></h6>
     </div>
 
-    <div id="pairAddressBlock">
-        <h6 class="pairAddress">VIRUS:&nbsp&nbsp
-            <a id="pair" class="pairHref" href="https://bscscan.com" target="_blank" rel="noopener noreferrer">
-                0x7861...0487
-            </a>
-        </h6> 
-        <button class="copySquare"  id="copyVirus">
-            <img src="copy.png" class="copyImage" id="virusClipboard">
-            <img src="tick_orange.png" class="copyImageTick" id="virusTick">
-        </button>
-        <h6 class="pairAddress">Pair:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <a id="pair" class="pairHref" href="https://bscscan.com" target="_blank" rel="noopener noreferrer">
-                0x30D...da89
-            </a>
-        </h6>
-        <button class="copySquare"  id="copyPair">
-            <img src="copy.png" class="copyImage" id="pairClipboard">
-            <img src="tick_orange.png" class="copyImageTick" id="pairTick">
-        </button>
-        
-    </div>
+   
 
     <table id="referralsTable">
         
@@ -127,28 +154,70 @@
         
     </table>
 
-    <div id="cryptologosbar">
-        <a href="https://t.me/virusdaoen" target="_blank" rel="noopener noreferrer" style="color: transparent">
-        <img class="cryptologo" src="cryptologos/bscscan.png">
-        </a>
+    </div>
 
-        <a href="https://t.me/virusdaoen" target="_blank" rel="noopener noreferrer" style="color: transparent">
-            <img class="cryptologo" src="cryptologos/telegram.png">
-        </a>
+    <!-- NEW BLOCK -->
+    <div id="staking" style="display: none;">
 
-        <a href="https://t.me/virusdaoen" target="_blank" rel="noopener noreferrer" style="color: transparent">
-        <img class="cryptologo" src="cryptologos/twitter.png">
-        </a>
+        <div id="stakeDetailsBlock">
+            <h4 class="stakeHeader">
+                APY
+            </h4>
+            <h2 class="stakeHeaderNumber" style="top: 30px; left: 0px;">
+                0%
+            </h2>
 
-        <a href="https://coinmarketcap.com" target="_blank" rel="noopener noreferrer" style="color: transparent">
-        <img class="cryptologo tbc" src="cryptologos/cmc.png">
-        </a>
+            <h4 class="stakeHeader" style="position: absolute; left: 150px; top: 0px;">
+                Total $VIRUS Staked
+            </h4>
+            <h2 class="stakeHeaderNumber"  style="left: 150px; top: 30px;">
+                0 
+            </h2>
+        </div>
 
-        <a href="https://coingecko.com" target="_blank" rel="noopener noreferrer" style="color: transparent">
-        <img class="cryptologo tbc" src="cryptologos/coingecko.png">
-        </a>
+
+        <div class="stakeBlock" id="stakeVirusBlock">
+
+            <div class="statsSquare" id="stakeVirusSquare" style="width: 75px; height: 75px">
+                <img src="balance.png" class="statsImage" style="width: 40px;">
+            </div>
+            <h4 class="stakeHeading orange">$VIRUS Balance</h4>
+            <h2 class="stakeNumber" id="stat_balance">0</h2>
+            <input class="stakeInput othergray" id="stakeInputID" placeholder="0" style="top: 120px;">
+            <button id="maxStakeButton"> MAX </button>    
+        </input>
+            <div class="stakeRectangle transOrangeBg" id="stakeButton" style="top: 180px;">
+                Stake
+            </div>
+
+        </div>
+
+        <div class="stakeBlock" id="unstakeVirusBlock">
+            <div class="statsSquare" id="unstakeVirusSquare" style="width: 75px; height: 75px">
+                <img src="yellow_pig.png" class="statsImage" style="width: 40px;">
+            </div>
+            <h4 class="stakeHeading yellow">Staked $VIRUS</h4>
+            <h2 class="stakeNumber">0</h2>
+            <input class="stakeInput othergray" id="unstakeInputID" placeholder="0" style="top: 120px;"></input>
+            <div class="stakeRectangle transOrangeBg" id="unstakeButton" style="top: 180px;">
+                Stake
+            </div>
+        </div>
+        
+        <div class="stakeBlock" id="stakeRewardsBlock">
+            <div class="statsSquare" id="unstakeVirusSquare" style="width: 75px; height: 75px">
+                <img src="rewards.png" class="statsImage" style="width: 40px;">
+            </div>
+            <h4 class="stakeHeading yellow" id="unclaimedRewards">Unclaimed Rewards</h4>
+            <h2 class="stakeNumber" id="unclaimedRewardsNumber">0</h2>
+            <div class="stakeRectangle" id="stakeRewardsButton" >
+                Claim Rewards
+            </div>
+        </div>
+        
 
     </div>
+ 
     
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
     <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
